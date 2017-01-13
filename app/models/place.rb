@@ -8,7 +8,6 @@ class Place < ActiveRecord::Base
 
   validates :name, :address, :description, presence: true
   validates :name, length: { minimum: 3 }
-  validates :caption, presence: true, length: { minimum: 8 }
 
 
 end
